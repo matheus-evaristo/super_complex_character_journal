@@ -1,0 +1,9 @@
+INSERT INTO characters (id, name) VALUES (1, 'First Tester');
+INSERT INTO characters (id, name) VALUES (2, 'Farst Toster');
+INSERT INTO characters (id, name) VALUES (3, 'French Tamer');
+INSERT INTO characters (id, name) VALUES (4, 'Firs Teter');
+INSERT INTO characters (id, name) VALUES (5, 'Firt Teser');
+INSERT INTO characters (id, name) VALUES (6, 'Fist Teer');
+INSERT INTO characters (id, name) VALUES (7, 'Fost Testee');
+INSERT INTO characters (id, name) VALUES (8, 'Frost Tosar');
+INSERT INTO characters (id, name) VALUES (9, 'Firm Teaser');
