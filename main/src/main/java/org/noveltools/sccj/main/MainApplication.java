@@ -1,7 +1,9 @@
 package org.noveltools.sccj.main;
 
-import java.util.Arrays;
+import java.util.Date;
 
+import org.noveltools.sccj.main.character.CharacterEntity;
+import org.noveltools.sccj.main.character.CharacterRepository;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -16,16 +18,11 @@ public class MainApplication {
 	}
 
 	@Bean
-	public CommandLineRunner commandLineRunner(ApplicationContext ctx) {
+	public CommandLineRunner commandLineRunner(ApplicationContext ctx, CharacterRepository repository) {
 		return args -> {
-			// System.out.println("Beans:: ");
-
-			String[] beanNames = ctx.getBeanDefinitionNames();
-			Arrays.sort(beanNames);
-			for (String beanName : beanNames) {
-				continue;
-				// System.out.println(beanName);
-			}
+			repository.save(
+				new CharacterEntity(1L, "Phobos")
+			);
 		};
 	}
 
